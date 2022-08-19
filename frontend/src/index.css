@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Tulpen+One&display=swap');
+
+
+:root{
+    --font-title: "Tulpen One";
+    --font-base:"Mulish";
+
+    --primary-color:#edf2f8;
+    --secondary-color:#0050b1;
+    --black-color:#030303;
+    --light-gray-color:#e4e4e4;
+    --gray-color:#6b7688;
+    --yellow-color:#e4a701;
+    --red-color:#e43601;
+    --green-color:#1ab106;
+    --pink-color:#e401c6;
+    --purple-color:#6a03ca;
+    
+    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
