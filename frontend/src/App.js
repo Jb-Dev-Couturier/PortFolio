@@ -34,7 +34,7 @@ const App = () => {
       </div>
 
       <div className="app">
-        <Navbar />
+         <Navbar /> 
         <Header />
         <About />
         <Work />

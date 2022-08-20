@@ -105,7 +105,7 @@
     background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
+    box-shadow:var(--boxShadow);
 
     svg {
       width: 35px;
