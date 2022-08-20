@@ -5,8 +5,8 @@
     --font-title: "Tulpen One";
     --font-base:"Mulish";
 
-    --primary-color:#edf2f8;
-    --secondary-color:#0050b1;
+    --primary-color:#d47100;
+    --secondary-color:#0079b1;
     --black-color:#030303;
     --light-gray-color:#e4e4e4;
     --gray-color:#6b7688;
@@ -15,6 +15,7 @@
     --green-color:#1ab106;
     --pink-color:#e401c6;
     --purple-color:#6a03ca;
+    --white-color:#fff;
     
     
 }
