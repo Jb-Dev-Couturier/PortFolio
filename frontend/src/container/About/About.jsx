@@ -1,32 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { images } from '../../constants';
-import './About.scss';
 
-const abouts = [
-  {
-    title: 'Developpeur Web',
-    description: 'Realise vos projets avec le frameworks REACT',
-    imgUrl: images.about01,
-  },
-  {
-    title: 'Frontend Développeur',
-    description: 'Detail graphique, design et Responsive',
-    imgUrl: images.about02,
-  },
-  {
-    title: 'Backend Développeur',
-    description: "Creation dataBase, routage et deploiement.",
-    imgUrl: images.about03,
-  },
-  {
-    title: 'MERN Stack',
-    description: 'Utilisation MERN, from scratch, for You !! ',
-    imgUrl: images.about04,
-  },
-];
+import './About.scss';
+import { urlFor, client } from '../../client';
 
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+    client.fetch(query)
+    .then((data) => setAbouts(data));
+  }, []);
+
   return (
     <>
       <h2 className="head-text">
@@ -45,7 +30,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
