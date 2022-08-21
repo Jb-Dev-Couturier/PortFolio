@@ -92,7 +92,7 @@
   justify-content: space-evenly;
   align-items: flex-start;
   height: 100%;
-  margin-left: 1rem;
+  
 
   div {
     width: 100px;
@@ -111,19 +111,21 @@
   // circles with different height & width
 
   div:nth-child(1) {
-    width: 80px;
-    height: 80px;
+    transform: translateX(-150px);
+    width: 160px;
+    height: 160px;
   }
 
   div:nth-child(2) {
-    margin: 1.75rem;
+    transform: translateX(-50px);
     width: 120px;
     height: 120px;
   }
 
   div:nth-child(3) {
-    width: 160px;
-    height: 160px;
+    transform: translateX(-120px);
+    width: 80px;
+    height: 80px;
   }
 
   @media screen and (min-width: 2000px) {
