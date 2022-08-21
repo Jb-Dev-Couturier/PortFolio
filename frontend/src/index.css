@@ -11,6 +11,7 @@
     --black-color:#030303;
     --light-gray-color:#e4e4e4;
     --gray-color:#6b7688;
+    --gray-primary:#dddddd;
     --yellow-color:#e4a701;
     --red-color:#e43601;
     --green-color:#1ab106;
@@ -97,6 +98,41 @@
             transform: scale3d(1, 1, 1);
   }
 }
+
+/**
+ * ----------------------------------------
+ * animation pulsate-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 
 
 
